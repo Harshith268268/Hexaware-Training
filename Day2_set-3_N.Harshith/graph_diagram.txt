@@ -1,0 +1,25 @@
+SET 3 - TASK 3: HUB NETWORK
+Adjacency-list graph (10 hubs)
+
+HUB-A: HUB-B, HUB-C
+HUB-B: HUB-A, HUB-D, HUB-E
+HUB-C: HUB-A, HUB-F
+HUB-D: HUB-B, HUB-G
+HUB-E: HUB-B, HUB-G, HUB-H
+HUB-F: HUB-C, HUB-H
+HUB-G: HUB-D, HUB-E, HUB-I
+HUB-H: HUB-E, HUB-F, HUB-J
+HUB-I: HUB-G, HUB-J
+HUB-J: HUB-H, HUB-I
+
+Readable connection sketch (undirected edges):
+
+             HUB-D -------- HUB-G -------- HUB-I
+               |              |              |
+HUB-A -------- HUB-B -------- HUB-E -------- HUB-H -------- HUB-J
+  |                                           |
+  +------------- HUB-C -------- HUB-F --------+
+
+The exact neighbour relationships are defined by the adjacency list above.
+Central depot for DFS demonstration: HUB-A.
+BFS example: HUB-A to HUB-J.

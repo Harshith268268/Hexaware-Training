@@ -1,0 +1,22 @@
+SET 2 - INSURANCE CLAIM APPROVAL DIRECTED GRAPH
+
+Registration
+     |
+     v
+Assessment -----------------> Settlement
+     |
+     v
+Surveyor -------------------> Settlement
+
+Adjacency list:
+Registration -> Assessment
+Assessment -> Surveyor, Settlement
+Surveyor -> Settlement
+Settlement -> (no outgoing edge)
+
+BFS shortest path:
+Registration -> Assessment -> Settlement (2 transitions)
+
+DFS cycle test:
+A -> B -> C -> A is a directed cycle.
+The main approval graph contains no directed cycle.
